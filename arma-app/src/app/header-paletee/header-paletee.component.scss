@@ -1,0 +1,73 @@
+:host {
+    .header-platee {
+        background-color: #EAEAEA;
+        padding: 1em 0;
+        font-size: 80%;
+        border-bottom: 1px solid #c5c5c5;
+    }
+
+    .active-power {
+        color: #DC3545;
+    }
+
+    .vertical-text-palatee p {
+        writing-mode: vertical-lr;
+        margin: 0 !important;
+    }
+
+    .wms-ul {
+        list-style: none;
+
+    }
+
+    .device-ppc {
+        background-color: #B86D71;
+    }
+
+    .device-inverter {
+        background-color: #7E68CC;
+    }
+
+    .device-PQM {
+        background-color: #64B3D2;
+    }
+
+    .device-box {
+        color: #fff;
+        width: 2em;
+        display: inline-flex;
+        justify-content: center;
+    }
+}
+
+::ng-deep .calendar-range {
+    width: 5.75rem;
+    margin-bottom: 1em;
+}
+
+::ng-deep .checked-paletee {
+    .ui-inputswitch-slider {
+        background-color: red !important;
+    }
+
+
+}
+
+
+::ng-deep .ui-inputswitch {
+    width: 2.5em !important;
+    height: 1.25em !important;
+}
+
+::ng-deep .ui-inputswitch .ui-inputswitch-slider:before {
+    height: 1em !important;
+    width: 1em !important;
+    left: 0.15em !important;
+    bottom: 0.15em !important;
+}
+
+::ng-deep .ui-inputswitch-checked {
+    .ui-inputswitch-slider {
+        background-color: green !important;
+    }
+}

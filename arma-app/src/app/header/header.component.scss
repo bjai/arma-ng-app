@@ -1,0 +1,42 @@
+:host {
+
+    .header {
+        background-color: #262A33;
+        color: #ffffff;
+        padding-top: 1em;
+
+        .title {
+            display: flex;
+            flex-direction: row;
+
+            span {
+                padding: 0 1em;
+            }
+        }
+
+        &-right-icons {
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            li {
+                padding: 0 1em;
+                cursor: pointer;
+            }
+
+            .notification {
+                width: 70px;
+                text-align: left;
+
+                span {
+                    position: absolute;
+                    top: -8px;
+                }
+            }
+        }
+    }
+
+}
