@@ -1,0 +1,50 @@
+:host {
+    header {
+        background: #555965;
+        color: #fff;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+    }
+
+    section {
+        margin: 2em; 
+         height: 385px;
+        background-color: #fff;
+        font-size: 12px !important;
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 2em 1em;
+
+                span {
+                    width: 1em;
+                    height: 1em;
+                    background-color: #A9A9A9;
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+
+    .inverter-box {
+        background: #A9A9A9;
+        margin-right: 0.25em;
+        margin-bottom: 0.25em;
+    }
+
+    .green-code {
+        background-color: #88CF97 !important;
+    }
+
+    .pink-code {
+        background-color: #E29E9A !important;
+    }
+}
+
+::ng-deep body .ui-widget {
+    font-size: 12px;
+}

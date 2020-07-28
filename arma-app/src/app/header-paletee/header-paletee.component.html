@@ -1,0 +1,211 @@
+<div class="container-fluid header-platee">
+    <div class="row ml-0 mr-0">
+
+        <div class="col-md-auto d-flex flex-row border-right  border-secondary">
+            <div class="d-flex flex-column px-md-1 justify-content-sm-around">
+                <span>Day and Time</span>
+                <span class="h6 mb-0">
+                    {{dateTime | date:'E'}} {{dateTime | date:'dd'}} {{dateTime | date:'MMM'}}
+                </span>
+                <span>{{dateTime | date:'h:mm:ss aa'}}</span>
+            </div>
+            <div class="d-flex flex-column px-md-1 justify-content-sm-around">
+                <span>Range</span>
+                <span>
+
+                    <i class="pi  pi-calendar"></i>
+                    {{dateTime | date:'dd-MM-yyyy'}}
+                    <!-- <p-calendar
+                        inputStyleClass="calendar-range"
+                        [(ngModel)]="dateValue"
+                        [showIcon]="true"></p-calendar> -->
+                </span>
+                <span>
+                    <i class="pi  pi-calendar"></i>
+                    {{dateTime | date:'dd-MM-yyyy'}}
+                    <!-- <p-calendar
+                        inputStyleClass="calendar-range"
+                        [(ngModel)]="dateValue"
+                        [showIcon]="true"></p-calendar> -->
+                </span>
+            </div>
+        </div>
+        <div class="col-md-auto d-flex flex-column justify-content-sm-around">
+            Active Power
+            <span class="d-flex flex-row active-power align-items-baseline">
+                <h1>30</h1>
+                MW
+            </span>
+        </div>
+        <div class="col-md-auto d-flex flex-column justify-content-center vertical-text-palatee border-right border-left border-secondary px-0">
+            <p class="text-monospace mb-0">P C I</p>
+        </div>
+        <div class="col-md-auto d-flex flex-row px-0">
+            <div class="col-md-auto">
+                <ul class="flex-column wms-ul px-0 ">
+                    <li class="mb-1 font-weight-bold">Parameters</li>
+                    <li>Actual</li>
+                    <li>setpoint</li>
+                    <li>status</li>
+                </ul>
+            </div>
+            <div class="col-md-auto">
+                <ul class="flex-column wms-ul px-0 mb-0">
+                    <li class="mb-1 font-weight-bold">P [MW]</li>
+                    <li>0:00</li>
+                    <li>0:00</li>
+                    <li>
+                        <p-inputSwitch
+                            styleClass="checked-paletee"
+                            [(ngModel)]="checked1"></p-inputSwitch>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-auto">
+                <ul class="flex-column wms-ul px-0 mb-0">
+                    <li class="mb-1 font-weight-bold">Q [MVAR]</li>
+                    <li>0:00</li>
+                    <li>0:00</li>
+                    <li>
+                        <p-inputSwitch
+                            styleClass="checked-paletee"
+                            [(ngModel)]="checked2"></p-inputSwitch>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-auto">
+                <ul class="flex-column wms-ul px-0 mb-0">
+                    <li class="mb-1 font-weight-bold">PF</li>
+                    <li>0:00</li>
+                    <li>0:00</li>
+                    <li>
+                        <p-inputSwitch
+                            styleClass="checked-paletee"
+                            [(ngModel)]="checked3"></p-inputSwitch>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-auto">
+                <ul class="flex-column wms-ul px-0 mb-0">
+                    <li class="mb-1 font-weight-bold">V [VK]</li>
+                    <li>0:00</li>
+                    <li>0:00</li>
+                    <li>
+                        <p-inputSwitch
+                            styleClass="checked-paletee"
+                            [(ngModel)]="checked4"></p-inputSwitch>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-auto">
+                <ul class="flex-column wms-ul px-0 mb-0">
+                    <li class="mb-1 font-weight-bold">F [hz]</li>
+                    <li>0:00</li>
+                    <li>0:00</li>
+                    <li>
+                        <p-inputSwitch
+                            styleClass="checked-paletee"
+                            [(ngModel)]="checked5"></p-inputSwitch>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-auto d-flex flex-column justify-content-center vertical-text-palatee border-right border-left border-secondary px-0">
+            <p class="text-monospace mb-0">W V M S</p>
+        </div>
+        <div class="col-md-auto d-flex flex-row justify-content-sm-between">
+            <ul class="d-flex flex-column wms-ul px-0 mb-0 justify-content-sm-between">
+                <li class="px-1">AVG PGA</li>
+                <li class="px-1">AVG GHI</li>
+                <li class="px-1">Avialable Power</li>
+            </ul>
+            <ul class="d-flex flex-column wms-ul px-0 mb-0 justify-content-sm-between">
+                <li class="px-1">50.08 w/m2</li>
+                <li class="px-1">41.06 w/m2</li>
+                <li class="px-1">55.6 MW</li>
+            </ul>
+        </div>
+        <div class="col-md-auto d-flex flex-column justify-content-center vertical-text-palatee border-right border-left border-secondary px-0">
+            <p class="text-monospace mb-0">CB  STATUS</p>
+        </div>
+        <div class="col-md-auto d-flex flex-column justify-content-sm-between">
+            <ul class="d-flex flex-row wms-ul px-0 mb-0">
+                <li class="px-1">CB - 1</li>
+                <li class="px-1">
+                    <p-inputSwitch
+                        styleClass="checked-paletee"
+                        [(ngModel)]="cb1"></p-inputSwitch>
+                </li>
+            </ul>
+            <ul class=" d-flex flex-row wms-ul px-0 mb-0">
+                <li class="px-1">CB - 2</li>
+                <li class="px-1">
+                    <p-inputSwitch
+                        styleClass="checked-paletee"
+                        [(ngModel)]="cb2"></p-inputSwitch>
+                </li>
+            </ul>
+            <ul class=" d-flex flex-row wms-ul px-0 mb-0">
+                <li class="px-1">CB - 3</li>
+                <li class="px-1">
+                    <p-inputSwitch
+                        styleClass="checked-paletee"
+                        [(ngModel)]="cb3"></p-inputSwitch>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-auto d-flex flex-column justify-content-center vertical-text-palatee border-right border-left border-secondary px-0">
+            <p class="text-monospace mb-0">GRD</p>
+        </div>
+        <div class="col-md-auto d-flex flex-column justify-content-sm-between">
+            <ul class="d-flex flex-row wms-ul px-0 mb-0 justify-content-sm-between">
+                <li class="px-1">Grid Status</li>
+                <li class="px-1">
+                    <p-inputSwitch
+                        styleClass="checked-paletee"
+                        [(ngModel)]="cb1"></p-inputSwitch>
+                </li>
+            </ul>
+            <ul class=" d-flex flex-row wms-ul px-0 mb-0 justify-content-sm-between">
+                <li class="px-1">Grid Control</li>
+                <li class="px-1">
+                    <p-inputSwitch
+                        styleClass="checked-paletee"
+                        [(ngModel)]="cb2"></p-inputSwitch>
+                </li>
+            </ul>
+            <ul class=" d-flex flex-row wms-ul px-0 mb-0 justify-content-sm-between">
+                <li class="px-1">PQM COMM STS</li>
+                <li class="px-1">
+                    <p-inputSwitch
+                        styleClass="checked-paletee"
+                        [(ngModel)]="cb3"></p-inputSwitch>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-auto d-flex flex-column justify-content-center vertical-text-palatee border-right border-left border-secondary px-0">
+            <p class="text-monospace mb-0">DEVICE</p>
+        </div>
+        <div class="col-md-auto d-flex flex-row justify-content-sm-between">
+            <ul class="d-flex flex-column wms-ul px-0 mb-0 justify-content-sm-between">
+                <li class="px-1">PPC</li>
+                <li class="px-1">Inverter</li>
+                <li class="px-1">PQM</li>
+            </ul>
+            <ul class="d-flex flex-column wms-ul px-0 mb-0 justify-content-sm-between">
+                <li class="px-1">
+                    <span class="device-box device-ppc">102</span>
+                    | 228
+                </li>
+                <li class="px-1">
+                    <span class="device-box device-inverter">0</span>
+                    | 4
+                </li>
+                <li class="px-1">
+                    <span class="device-box device-PQM">0</span>
+                    | 4
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
